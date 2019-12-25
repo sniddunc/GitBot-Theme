@@ -1,0 +1,20 @@
+{
+	"name": "scss-template",
+	"version": "1.0.0",
+	"description": "Basic SCSS Template",
+	"main": "index.js",
+	"scripts": {
+		"scss": "node-sass scss/style.scss public/css/style.css",
+		"scss:watch": "node-sass --watch scss/index.scss public/css/style.css",
+		"server": "live-server public",
+		"start": "npm-run-all --parallel scss:watch server"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"live-server": "^1.2.0",
+		"node-sass": "^4.9.0",
+		"npm-run-all": "^4.1.3"
+	}
+}

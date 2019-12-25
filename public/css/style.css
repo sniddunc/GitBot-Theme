@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #282b30; }
+
+header.header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  header.header .title-box {
+    text-align: center; }
+
+section.features {
+  background-color: #1e2124;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column; }
+  section.features .heading--primary {
+    flex: 1; }
+
+@media only screen and (max-width: 768px) {
+  section.features {
+    width: 90%; }
+    section.features .heading--primary {
+      margin: 0; } }
+
+.text--light {
+  color: #f1f1f1; }
+
+.heading--title {
+  font-size: 7.2rem;
+  font-weight: 400; }
+
+.heading--primary {
+  font-size: 3rem;
+  font-weight: 300; }
+
+@media only screen and (max-width: 768px) {
+  .heading--title {
+    font-size: 4rem;
+    font-weight: 400; }
+  .heading--primary {
+    font-size: 2.5rem;
+    font-weight: 300;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.button {
+  color: #f1f1f1;
+  background-color: #7289da;
+  text-decoration: none; }
+  .button:hover {
+    cursor: pointer;
+    background-color: #768cdb;
+    margin-top: 0.2rem; }
+
+.button--large {
+  font-size: 2.2rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem; }
+
+.feature-list {
+  display: flex;
+  list-style: inside;
+  color: #d4d4d4;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column; }
+  .feature-list__item {
+    margin-top: 1.5rem; }
+  .feature-list__header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem; }
