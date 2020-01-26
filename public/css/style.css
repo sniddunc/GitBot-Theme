@@ -67,15 +67,20 @@ section.features {
 .button {
   color: #f1f1f1;
   background-color: #7289da;
-  text-decoration: none; }
+  text-decoration: none;
+  border: 1px solid #5e78d5; }
   .button:hover {
     cursor: pointer;
-    background-color: #768cdb;
-    margin-top: 0.2rem; }
+    background-color: #768cdb; }
 
 .button--large {
   font-size: 2.2rem;
   padding: 2rem 4rem;
+  border-radius: 1rem; }
+
+.button--normal {
+  font-size: 1.8rem;
+  padding: 1.4rem 3.4rem;
   border-radius: 1rem; }
 
 .feature-list {
@@ -91,3 +96,37 @@ section.features {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 0.2rem; }
+
+.message-box {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #7289da, #4a67cf);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .message-box__content {
+    width: 35%;
+    height: auto;
+    padding-bottom: 3rem;
+    background-color: rgba(40, 43, 48, 0.9);
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid #1e2124; }
+  .message-box__header {
+    font-size: 4rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #33373d; }
+  .message-box__message {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    padding: 2rem 4rem;
+    font-weight: 300;
+    text-align: justify; }
+
+@media only screen and (max-width: 1000px) {
+  .message-box__content {
+    width: 96%;
+    min-height: 96%; }
+  .message-box__message {
+    text-align: center; } }
